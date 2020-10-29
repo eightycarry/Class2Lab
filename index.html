@@ -3,11 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title>Day 3 Lab</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="lab2.js"></script>
 </head>
 <body>
     <h1>Day 3 Library and Pizza Labs</h1>
-    <button onclick="calculateCost()">Determine Cost of Books and DVDs</button>
-    <button onclick="calculatePizza()">Determine Split Cost of Pizza</button>
+    <fieldset>
+    <label for="bookAmt">How many books do you have?</label>
+    <input type="number" id ="bookAmt">
+    <br>
+
+    <label for="bookDays">How long (Days) have you had the books?</label>
+    <input type="number" id ="bookDays">
+    <br>
+
+    <label for="dvdAmt">How many DVDs do you have?</label>
+    <input type="number" id ="dvdAmt">
+    <br>
+
+    <label for="dvdDays">How long (Days) have you had the DVDs?</label>
+    <input type="number" id ="dvdDays">
+    <br>
+    </fieldset>
+
+    <button id="libraryButton">Show cost</button>
+
+    <p class="outputLibrary">
+        Your total cost is $<span id="totalLibraryCost"></span>.
+    </p>
+
+
+    <!--<button onclick="calculateCost()">Determine Cost of Books and DVDs</button>
+    <button onclick="calculatePizza()">Determine Split Cost of Pizza</button>-->
+    <!--<button id="pizzaButton">Show cost</button>-->
+
+
+    <fieldset>
+    <label for="toppingAmt">How many toppings do you have?</label>
+    <input type="number" id ="toppingAmt">
+    <br>
+
+    <label for="peopleAmt">How many people are paying?</label>
+    <input type="number" id ="peopleAmt">
+    <br>
+    </fieldset>
+
+    <button id="pizzaButton">Show cost</button>
+
+    <p class="outputPizza">
+        The split cost between everyone is $<span id="totalPizzaCost"></span>
+    </p>
 </body>
 </html>
